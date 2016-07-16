@@ -136,7 +136,9 @@
 
       <div class="inner-page row">
         <div class="col-md-12">
-          <form class="vr-signup-form form-horizontal" id="vr-signup-form-15393162788991">
+          <form class="vr-signup-form form-horizontal"
+                action="https://formspree.io/jessica@jrmlandscaping.com"
+                method="POST">
             <div class="vr-field form-group">
               <label class="col-sm-2 control-label">First Name</label>
               <div class="col-sm-10">
@@ -152,14 +154,14 @@
             </div>
 
             <div class="vr-field form-group">
-              <label class="col-sm-2 control-label">Email Address *</label>
+              <label class="col-sm-2 control-label">Email Address</label>
               <div class="col-sm-10">
                 <input type="email" name="email_address" class="form-control" required>
               </div>
             </div>
 
             <div class="vr-field form-group">
-              <label class="col-sm-2 control-label">Phone *</label>
+              <label class="col-sm-2 control-label">Phone</label>
               <div class="col-sm-10">
                 <input type="text" name="home_phone" class="form-control" required>
               </div>
@@ -167,15 +169,15 @@
 
             <div class="vr-submit">
               <div class="vr-notice" style="font-weight: bold; float:right; font-size: 24px"></div>
-              <input type="submit" value="Get more info" class="btn btn-primary btn-centered">
+              <input type="submit" value="Get more info" class="btn btn-primary btn-centered"
+                     onclick="$('form').hide(); $('#thank-you').show(); return true;">
             </div>
           </form>
-
-          <script type="text/javascript" src="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-1.js">
-          </script>
-
-          <script type="text/javascript">if (typeof VR !== "undefined" && typeof VR.SignupForm !== "undefined") { new VR.SignupForm({ id: "15393162788991", element: "vr-signup-form-15393162788991", endpoint: "https://vr2.verticalresponse.com/se/"}); }
-          </script>
+          <div id="thank-you" class="inner-page" style="display: none;">
+            <p class="text-center" style="color: #27AE60; font-size: 2em">
+              <strong>&#10003; Thank you! We'll be in touch soon.</strong>
+            </p>
+          </div>
         </div>
       </div>
     </div> <!-- /#info -->
@@ -214,7 +216,7 @@
         <div class="col-md-6">
           <ul class="big-list">
             <li><i class="fa fa-phone"></i> <a href="tel:+17574726327" style="color: white">Call our  Office 757-685-7456 or
-            <li><i class="fa fa-phone"></i> <a href="tel:+17574726327" style="color: white">Call 757-472-6327                                                                                     
+            <li><i class="fa fa-phone"></i> <a href="tel:+17574726327" style="color: white">Call 757-472-6327
             <li><i class="fa fa-mobile"></i> <a href="sms:+17574726327" style="color: white">Text 757-472-6327</li>
             <li><i class="fa fa-envelope-o"></i> <a href="mailto:jrmlandscaping@cox.net" style="color: white">jrmlandscaping@cox.net</a></li>
           </ul>
